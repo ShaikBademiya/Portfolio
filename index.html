@@ -45,9 +45,9 @@
         }
 
         nav ul li a:hover {
-            color: rgb(150, 150, 210);
             color: rgb(170, 110, 230);
-            font-size: 1.02rem;
+            color: #0ef;
+            font-size: 1.05rem;
         }
 
         main hr {
@@ -76,14 +76,14 @@
             font-size: 2.5rem;
         }
 
-        .leftSection .buttons{
+        .leftSection .buttons {
             padding: 50px 0;
         }
 
         .leftSection .btn {
             padding: 12px;
-            background-color: #1e2167;
-            color: white;
+            background-color: #0ef;
+            color: black;
             border: 2px solid white;
             border-radius: 6px;
             font-size: 16px;
@@ -94,8 +94,8 @@
             width: 80%;
         }
 
-        .purple {
-            color: rgb(170, 110, 230);
+        .text-orange {
+            color: orange;
         }
 
         .text-gray {
@@ -103,7 +103,7 @@
         }
 
         #element {
-            color: rgb(170, 110, 230);
+            color: orange;
         }
 
         .secondSection {
@@ -199,13 +199,21 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi, My name is <span class="purple">Bademiya</span>
-                <div>and I am a passionate</div>
+                Hi, My name is <span class="text-orange">Bademiya</span>
+                <div>and I am a passionate </div>
                 <span id="element"></span>
 
                 <div class="buttons">
-                    <button class="btn">Download resume</button>
-                    <button class="btn">Visit GitHub</button>
+                    <a href='Bademiya Resume.pdf' download="Bademiya resume">
+                        <button class="btn">
+                            Download resume
+                        </button>
+                    </a>
+                    <a href='https://github.com/ShaikBademiya?tab=repositories' target=”_blank”>
+                        <button class="btn">
+                            Visit GitHub
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="rightSection">
@@ -220,28 +228,6 @@
             <h1>Work Experience</h1>
 
             <div class="box">
-                <div class="vertical">
-                    <img class="image-top" src="developer.png" alt="">
-                    <div class="vertical-text">
-                        Python Developer (2022-2023)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia, error qui atque
-                        blanditiis animi. Exercitationem excepturi animi velit doloribus cupiditate saepe sit, delectus,
-                        reiciendis error possimus, aliquam tempore facere!
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="developer.png" alt="">
-                    <div class="vertical-text">
-                        Python Developer (2022-2023)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia, error qui atque
-                        blanditiis animi. Exercitationem excepturi animi velit doloribus cupiditate saepe sit, delectus,
-                        reiciendis error possimus, aliquam tempore facere!
-                    </div>
-                </div>
                 <div class="vertical">
                     <img class="image-top" src="developer.png" alt="">
                     <div class="vertical-text">
@@ -333,6 +319,7 @@
         var typed = new Typed('#element', {
             strings: ['Web Developer', 'AWS Solution Architest Associate', 'Python Developer'],
             typeSpeed: 50,
+            loop: true,
         });
     </script>
 </body>
